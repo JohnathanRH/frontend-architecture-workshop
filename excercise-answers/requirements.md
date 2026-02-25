@@ -32,8 +32,17 @@ For more information, check out the [Project Spec](./project-spec.md).
 | Deployability     | Code changes should be deployed to production within 10 minutes of starting a release.                        | Low      |
 
 ## Influential Functional Requirements
-
-_To be completed... by you! See Exercise 2 for more details._
+- Customers can browse the app without being authenticated. -> Guest user activites must be tracked
+- Authenticated customers can reset their passwords if forgotten. -> Forget password system sends an email to the user's email address
+- The app can provide personalized restaurant and food item recommendations based on customer preferences and order history. -> Personalized recommendation algorithm
+- Customers can add food items to a shopping cart (with or without authentication). -> Guest user activites must be tracked, and transfered once the user authenticates
+- Customers can apply promo codes or discounts to their orders. -> Needs a unit to represent and manage promo / discounts information
+- Customers can choose from multiple payment methods (e.g., credit/debit cards, digital wallets). -> Needs to integrate payment portal (ex. Midtrans)
+- Customers can receive an email confirmation with a digital receipt after placing an order. -> May need E-Mail plugin services
+- After placing an order, customers can see a real-time tracker of their order status. -> Needs web socket server to transmit real-time data
+- Once an order is out for delivery, customers can see a real-time map showing the driver's current location. -> Needs web socket server to transmit real-time data
+- Customers can contact the delivery driver or the restaurant in case of issues. -> Customer web app needs built in chat / telephone feature
+- Customers can receive a notification if a restaurant responds to one of their reviews. -> May need plugin for notifications
 
 ## Other Influencers
 
