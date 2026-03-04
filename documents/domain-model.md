@@ -89,3 +89,6 @@
 
 ### PaymentAgent
 - From payment gateway API
+
+### Class Diagram
+![[my domain model.png]]
